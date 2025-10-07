@@ -10,6 +10,11 @@ __pycache__/
 *$py.class
 *.so
 
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
 # Distribution / Packaging
 .Python
 build/

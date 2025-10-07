@@ -1,29 +1,32 @@
 #!/bin/bash
-# Terminal initialization script for Python virtual environment
+# VSCode Terminal Initialization Script for macOS/Linux
+# This script runs automatically when you open a new terminal in VSCode
 
-# Detect shell and source appropriate rc file
-if [ -n "$BASH_VERSION" ]; then
-    # Bash shell
-    if [ -f ~/.bashrc ]; then
-        source ~/.bashrc
-    fi
-elif [ -n "$ZSH_VERSION" ]; then
-    # Zsh shell
-    if [ -f ~/.zshrc ]; then
-        source ~/.zshrc
-    fi
+# Source the user's shell configuration
+if [ -f "$HOME/.bashrc" ]; then
+    source "$HOME/.bashrc"
+elif [ -f "$HOME/.bash_profile" ]; then
+    source "$HOME/.bash_profile"
+elif [ -f "$HOME/.zshrc" ]; then
+    source "$HOME/.zshrc"
 fi
 
-# Define helpful aliases
-alias setup-venv='python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt'
-alias activate='source .venv/bin/activate'
+# Define helpful aliases for Python virtual environment
+# setup-venv calls the setup.sh script to keep logic in one place
+alias setup-venv='bash setup.sh && source .venv/bin/activate 2>/dev/null'
+alias activate='source .venv/bin/activate && pip install -r requirements.txt 2>/dev/null'
+alias install-req='pip install -r requirements.txt'
 
-# Try to activate virtual environment if it exists
-if [ -f .venv/bin/activate ]; then
+# Check if virtual environment exists
+if [ -d ".venv" ]; then
+    # Activate it automatically
     source .venv/bin/activate
     echo "🐍 Virtual environment activated!"
+    echo "   Ready to code! Run: python main.py"
 else
-    echo "💡 No virtual environment found. Run 'setup-venv' to create one!"
-    echo ""
+    # Friendly message for first-time users
+    echo "💡 Welcome! No virtual environment found yet."
+    echo "   Run this command to set up everything: setup-venv"
 fi
 
+echo ""
