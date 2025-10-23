@@ -12,9 +12,9 @@ Let's explore this workspace together:
    - [Exploring the Project Files](#exploring-the-project-files)
    - [How to Run Code](#how-to-run-code)
    - [Setup](#setup)
-     - [🪟 Windows](#windows)
-     - [🍎🐧 Mac/Linux](#maclinux)
-     - [Working with Secrets](#working-with-secrets-api-keys-passwords)
+     - [Quick Start: Activate Your Environment](#quick-start-activate-your-environment)
+     - [First Time Setup](#first-time-setup)
+   - [Working with Secrets](#working-with-secrets-api-keys-passwords)
 2. [Your First Challenge: Understanding the Code](#your-first-challenge-understanding-the-code)
 
 
@@ -77,133 +77,28 @@ This means your environment is ready! If you see this, skip to [Your First Chall
 
 <br>
 
-#### Windows
+#### Quick Start: Activate Your Environment
 
-<a id="-setup-for-windows"></a>
-<details>
-  <summary><strong>🪟 Setup and troubleshooting for Windows</strong></summary>
+If you don't see `(.venv)` in your terminal, run one of these commands:
 
-**If you don't see a `.venv` folder**, follow these steps:
-
-##### Step 1: Allow Scripts to Run
-
-Open PowerShell and run this command once:
-
+**🪟 Windows:**
 ```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.venv\Scripts\activate
 ```
 
-Then close and reopen VSCode/Cursor.
-
-##### Step 2: Run Setup
-
-Choose one method:
-
-**Option A: Inside VSCode/Cursor** (Recommended)
-1. Open a new terminal in VSCode/Cursor
-2. Type: `setup-venv`
-3. Press Enter and wait for the success message
-
-**Option B: Double-Click Setup**
-- Find `setup.bat` in the Explorer and double-click it
-
-##### Step 3: Verify It Worked
-
-Close your terminal and open a new one. You should see `(.venv)` at the start of your prompt. Success! 🎉
-
----
-
-#### Troubleshooting
-
-**Problem: "Script is disabled" error**
-- You skipped Step 1! Run the ExecutionPolicy command above, then restart VSCode.
-
-**Problem: "Python is not recognized"**
-
-Python is not installed. Let's install it:
-
-**Method 1: Using winget (Recommended)**
-1. Open PowerShell and run:
-   ```powershell
-   winget install Python.Python.3.12
-   ```
-2. Restart your computer and try setup again
-
-**Method 2: Manual Download**
-1. Go to https://www.python.org/downloads/
-2. Download and run the installer
-3. **Important:** Check the box "Add Python to PATH" during installation
-4. Restart your computer and try setup again
-
-**Problem: Virtual environment not activating**
-- Type `activate` in the terminal to activate it manually
-
-**Still stuck?** Ask your instructor for help! Show them:
-- The exact error message
-- A screenshot if possible
-
-</details>
+**🍎 Mac/Linux:**
+```bash
+source .venv/bin/activate
+```
 
 <br>
 
-<a id="-setup-for-maclinux"></a>
+#### First Time Setup
 
-#### Mac/Linux
+Need to create your environment from scratch? Follow the full setup guide for your system:
 
-<details>
-  <summary><strong>🍎🐧 Setup and troubleshooting for Mac/Linux</strong></summary>
-
-**If you don't see a `.venv` folder**, follow these steps:
-
-##### Step 1: Run Setup
-
-Choose one method:
-
-**Option A: Inside VSCode/Cursor** (Recommended)
-1. Open a new terminal in VSCode/Cursor
-2. Type: `setup-venv`
-3. Press Enter and wait for the success message
-
-**Option B: Run Script in Terminal**
-- Open Terminal in this folder and run: `bash setup.sh`
-
-##### Step 2: Verify It Worked
-
-Close your terminal and open a new one. You should see `(.venv)` at the start of your prompt. Success! 🎉
-
----
-
-##### Troubleshooting
-
-**Problem: "Python3 is not installed"**
-
-**Mac:**
-1. First, install Homebrew (a package manager) if you don't have it:
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-2. Then install Python:
-   ```bash
-   brew install python3
-   ```
-3. Or download manually from: https://www.python.org/downloads/
-
-**Linux:**
-```bash
-sudo apt install python3 python3-venv
-```
-
-**Problem: Virtual environment not activating**
-- Type `activate` in the terminal to activate it manually
-
-**Problem: "Permission denied" when running setup.sh**
-- Run: `chmod +x setup.sh` then try again
-
-**Still stuck?** Ask your instructor for help! Show them:
-- The exact error message
-- A screenshot if possible
-
-</details>
+- **[🪟 Windows Setup Guide](setup_windows.md)** - Complete instructions including Python installation
+- **[🍎 Mac Setup Guide](setup_mac.md)** - Complete instructions including Python installation
 
 <br>
 

@@ -50,10 +50,19 @@
 - Keep examples small, minimal, and focused on one idea at a time.
 - Remember: the main goal is logical understanding, not production-ready software.
 
+## Virtual Environment
+- **Students should always work in a virtual environment.**
+- If a student's terminal doesn't show `(.venv)` at the start, remind them to activate it:
+  - **Windows:** `.venv\Scripts\activate`
+  - **Mac/Linux:** `source .venv/bin/activate`
+- If they don't have a virtual environment set up, refer them to the setup guides:
+  - [Windows Setup Guide](setup_windows.md)
+  - [Mac Setup Guide](setup_mac.md)
+
 ## Dependency Management
-- **When you need to use an external library:**
-  1. Add it to `requirements.txt` (one package per line)
-  2. Remind the student to run: `install-req` in the terminal
-  3. Explain briefly what the package does and why it's needed
-- **Example message:** "I've added `requests` to requirements.txt. Run `install-req` in your terminal to install it."
+- **Always add new packages to `requirements.txt`** (one package per line)
+- **When you add a package to requirements.txt:**
+  1. Tell the student to run: `pip install -r requirements.txt`
+  2. Explain briefly what the package does and why it's needed
+- **Example message:** "I've added `requests` to requirements.txt. Run `pip install -r requirements.txt` in your terminal to install it."
 - **Keep it minimal:** Only suggest external libraries when absolutely necessary for the learning goal.
