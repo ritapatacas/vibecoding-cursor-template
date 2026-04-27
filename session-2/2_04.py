@@ -1,6 +1,5 @@
-# 3.   Weather API (registration, free)
-# 👉 Open Weather Map - https://openweathermap.org/current
-
-# 🔎  Get the weather from a city
+# 4.  Google Search Results (registration, free)
 
 
+# 👉  Using SerpAPI - https://serpapi.com/
+# 🔎  Save the first 10 results of a google search

@@ -1,41 +1,41 @@
 # Session 2 - APIs
 
-## 1. Send Emails
+## 0. Send Emails
 **🔎 Goal:** Send an email to yourself.
 
 > Using [google app password](https://myaccount.google.com/apppasswords) (requires enabling 2FA)
 
 ---
 
-## 2. Quotable API
+## 1. Quotable API
 **🔎 Goal:** Get a random quote from quotable.io
 
 > No registration, free
 
 ---
 
-## 3. Wikipedia API
+## 2. Wikipedia API
 **🔎 Goal:** Get the first 3 sentences of a Wikipedia page
 
 > No registration, free
 
 ---
 
-## 4. Weather API
+## 3. Weather API
 **🔎 Goal:** Get the weather from a city
 
 > [Open Weather Map](https://openweathermap.org/current) (registration, free)
 
 ---
 
-## 5. Google Search Results
+## 4. Google Search Results
 **🔎 Goal:** Save the first 10 results of a google search
 
 > [SerpAPI](https://serpapi.com/) (registration, free)
 
 ---
 
-## 6. OpenAI Text Generation
+## 5. OpenAI Text Generation
 **🔎 Goal:** Generate text with ChatGPT
 
 > [OpenAI API](https://platform.openai.com/docs/overview) (registration, paid)
@@ -46,14 +46,14 @@
 
 ---
 
-## 7. OpenAI Image Generation
+## 6. OpenAI Image Generation
 **🔎 Goal:** Generate an image with ChatGPT
 
 > [OpenAI API](https://platform.openai.com/docs/overview) (registration, paid)
 
 ---
 
-## 8. OpenAI Image Description
+## 7. OpenAI Image Description
 **🔎 Goal:** Ask ChatGPT to describe the image you generated
 
 > [OpenAI API](https://platform.openai.com/docs/overview) (registration, paid)
@@ -62,14 +62,14 @@
 
 ---
 
-## 9. Waves Forecast
+## 8. Waves Forecast
 **🔎 Goal:** Find the height of waves in Nazare this week
 
 > [WorldWeatherOnline](https://www.worldweatheronline.com/) (registration, free)
 
 ---
 
-## 10. Open Movie Database
+## 9. Open Movie Database
 **🔎 Goal:** Ask the user for a movie title and let them guess the release year
 
 > [OMDB API](https://www.omdbapi.com/) (registration, free)
@@ -80,7 +80,7 @@
 
 ---
 
-## 11. Update a Sheet
+## 10. Update a Sheet
 **🔎 Goal:** Post data from data.csv to google sheet using the Google Sheets API
 
 > Registration, free

@@ -1,3 +1,4 @@
-# 1.   Make a program that outputs "Hello, World!"
+# 1.  Hello World
 
-print("Hello, World!");
+
+# 🔎  Make a program that outputs "Hello, World!"
