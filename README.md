@@ -8,129 +8,116 @@ Let's explore this workspace together:
 
 ## 📋 Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Getting to Know Your IDE](#getting-to-know-your-ide)
-   - [Exploring the Project Files](#exploring-the-project-files)
-   - [How to Run Code](#how-to-run-code)
-   - [Setup](#setup)
-     - [Quick Start: Activate Your Environment](#quick-start-activate-your-environment)
-     - [First Time Setup](#first-time-setup)
+1. [Getting Started](#getting-started)
+   - [IDE Setup](docs/ide_setup.md)
+   - [Get the Project](docs/get_the_project.md)
+   - [Getting to Know Your IDE](docs/getting_to_know_your_ide.md)
+2. [How to](#how-to)
+   - [Use the Terminal](#use-the-terminal)
+   - [Activate Your Environment](#activate-your-environment)
+   - [Run Code](#run-code)
+   - [Using Libraries](#using-libraries)
    - [Working with Secrets](#working-with-secrets-api-keys-passwords)
-3. [Your First Challenge: Understanding the Code](#your-first-challenge-understanding-the-code)
+3. [Start Coding](#start-coding)
+
+&nbsp;
+
+## Getting Started
+
+### [IDE Setup guide](docs/ide_setup.md)
+
+> Install Python and Git, choose your IDE, and follow the setup guide for your system.
+
+
+### [Get the Project guide](docs/get_the_project.md)
+
+> Download or clone the project onto your computer.
+
+### [Getting to Know Your IDE guide](docs/getting_to_know_your_ide.md)
+
+> Learn your way around the IDE layout and project files.
+
+&nbsp;
+
+## How to
+
+### Use the Terminal
+
+The terminal is where you run your code and interact with your project. It looks like a plain text window where you type commands and press **Enter** to execute them.
+
+#### Opening the Terminal
+
+**In your IDE:** Go to the menu bar and select **Terminal → New Terminal**. A panel will open at the bottom of the screen.
+
+**Outside your IDE:**
+
+- **田 Windows:** Search for **PowerShell** in the Start menu.
+- ** Mac:** Search for **Terminal** in Spotlight (`⌘` + `Space`, then type "Terminal").
+
+#### Essential Commands
+
+| Command | What it does | Example |
+|---------|-------------|---------|
+| `pwd` | Show your current folder | `pwd` |
+| `ls` | List files in the current folder | `ls` |
+| `cd` | Move into a folder | `cd session-1` |
+| `cd ..` | Go up one folder | `cd ..` |
+| `python` | Run a Python file | `python main.py` |
+| `clear` | Clear the terminal screen | `clear` |
+
+&nbsp;
+> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
+
+> **💡 Tips:** Press **`⇥ Tab`** to autocomplete folder and file names (e.g. `python sess` + `⇥ Tab` → `python session-1/`). Press the **`↑ Up arrow`** to repeat your last command.
+
+&nbsp;
+
+#### Reading Error Messages
+
+When something goes wrong, Python prints an error in the terminal. Don't panic — errors are normal and helpful! Ask your AI assistant: **"I got this error, what does it mean?"** and paste the message. It will explain what went wrong and how to fix it.
 
 ---
 
-## Prerequisites
+### Activate Your Environment
 
-Before you start coding, make sure you have these tools installed on your computer:
+**Good news!** A Python environment is already prepared for you. 🎉
 
-### 1. Python 3.13+
+When you open a terminal, you might see `(.venv)` at the start of the prompt, like this:
 
-Python is the programming language you'll be learning! Let's check if you have it:
+```sh
+(.venv) vibecoding-02-03-68307615:$
+```
 
-**🪟 Windows:**
+This means your environment is ready! If you see this, skip to [Run Code](#run-code).
+
+&nbsp;
+
+If you don't see `(.venv)`, run this command to activate it:
+
+**田 Windows:**
 
 ```powershell
-python --version
+.\.venv\Scripts\Activate.ps1
 ```
 
-**🍎 Mac/Linux:**
+** Mac:**
 
 ```bash
-python3 --version
+source .venv/bin/activate
 ```
 
-**Don't have Python?** Here's how to install it:
+&nbsp;
 
-**🪟 Windows:**
+#### First Time Setup
 
-- **Easy way:** Open PowerShell and run:
+Need to create your environment from scratch? Follow the full setup guide for your system:
 
-  ```powershell
-  winget install Python.Python.3.13
-  ```
-
-- **Manual way:** Download from [python.org](https://www.python.org/downloads/) and run the installer  
-  ⚠️ **Important:** Check the box "Add Python to PATH" during installation!
-
-**🍎 Mac:**
-
-- **Easy way (using Homebrew):**
-
-  ```bash
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  brew install python3
-  ```
-
-- **Manual way:** Download from [python.org](https://www.python.org/downloads/) and run the installer
-
-### 2. Git
-
-Git helps you save and track changes to your code. Let's check if you have it:
-
-```bash
-git --version
-```
-
-**Don't have Git?** Here's how to install it:
-
-**🪟 Windows:**
-
-- **Easy way:** Open PowerShell and run:
-
-  ```powershell
-  winget install Git.Git
-  ```
-
-- **Manual way:** Download from [git-scm.com](https://git-scm.com/downloads)
-
-**🍎 Mac:**
-
-- **Easy way (using Homebrew):**
-
-  ```bash
-  brew install git
-  ```
-
-- **Manual way:** Download from [git-scm.com](https://git-scm.com/downloads)
-
-### 3. IDE Choice (VSCode, Cursor, or Antigravity)
-
-Choose one of these IDE options:
-
-- [VSCode](https://code.visualstudio.com)
-- [Cursor](https://cursor.sh)
-- [Antigravity](https://antigravity.dev)
-
-> **💡 Note:** This project works with VSCode, Cursor, and Antigravity.
-
-**Need detailed setup help?** Check out the full guides:
-
-- [🪟 Windows Setup Guide](setup_windows.md)
-- [🍎 Mac Setup Guide](setup_mac.md)
+- **[田 Windows Setup Guide](docs/setup_windows.md)** - Complete instructions including Python installation
+- **[ Mac Setup Guide](docs/setup_mac.md)** - Complete instructions including Python installation
 
 ---
 
-## Getting to Know Your IDE
-
-Your screen has a few key areas:
-
-- **Explorer (Left Side)**: Like a file cabinet — it shows all project files (like `main.py`). Click a file to open it.
-- **Editor (Center)**: Your workbench. This is where you’ll write and edit code.
-- **Terminal (Bottom)**: Your command center. Run commands here to execute your scripts and see results.
-- **AI Chat Panel (Right Side)**: Your AI assistant. You can ask questions about your code, concepts, or next steps.  
-  Remember: the AI will explain logic simply, not overwhelm you with code details.
-
-### Exploring the Project Files
-
-- **`main.py`**: This is the main file where you will write your Python code. For now, this is the only file you need to focus on.
-- **Other Files**: You might see config files like `.cursorrules`, `.github/copilot-instructions.md`, and `.antigravityrules`, plus files like `requirements.txt` and `.vscode`. Don’t worry about these — they exist to make the environment easier and to guide the AI assistant.
-
----
-
-### How to Run Code
-
-Now let’s run the code you just explored:
+### Run Code
 
 1. Make sure `main.py` is open in the **Editor**.
 2. Click into the **Terminal** at the bottom.
@@ -139,8 +126,9 @@ Now let’s run the code you just explored:
 ```bash
 python main.py
 ```
+> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
 
-1. You should see this message appear in the terminal:
+4. You should see this message appear in the terminal:
 
 ```sh
 Hello, world!
@@ -148,46 +136,45 @@ Hello, world!
 
 🎉 Congrats, you just ran your first Python program in your IDE!
 
----
+#### Running Files from Any Directory
 
-### Setup
+> **Important:** The IDE play button uses the system interpreter and does not run code inside the virtual environment. This behavior is generally not configurable. To ensure the correct environment is used, run your files directly from the terminal.
 
-**Good news!** A Python environment is already prepared for you. 🎉  
+To run a Python file from any directory:
 
-When you open a terminal, you might see `(.venv)` at the start of the prompt, like this:
+1. **Confirm that your virtual environment is activated.**  
+   You should see `(.venv)` at the start of your terminal prompt.
 
-```sh
-(.venv) vibecoding-02-03-68307615:$
-```
+2. **Open the Terminal.**
 
-This means your environment is ready! If you see this, skip to [Your First Challenge](#your-first-challenge-understanding-the-code).
-
----
-
-#### Quick Start: Activate Your Environment
-
-If you don't see `(.venv)` in your terminal, run this commands:
-
-**🪟 Windows:**
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-**🍎 Mac/Linux:**
+3. **Run the file by providing its relative path:**
 
 ```bash
-source .venv/bin/activate
+python session-1/1_01.py
 ```
+
+> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
 
 ---
 
-#### First Time Setup
+### Using Libraries
 
-Need to create your environment from scratch? Follow the full setup guide for your system:
+This project uses a `requirements.txt` file to list the Python packages it depends on. Here's what's included:
 
-- **[🪟 Windows Setup Guide](setup_windows.md)** - Complete instructions including Python installation
-- **[🍎 Mac Setup Guide](setup_mac.md)** - Complete instructions including Python installation
+| Package | What it does |
+|---------|-------------|
+| `pip` | Python's package installer — keeps itself up to date |
+| `autopep8` | Automatically formats your code to follow Python style guidelines |
+
+Make sure your virtual environment is activated (you should see `(.venv)` in your terminal), then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+That's it! Python will download and install everything listed in the file. You only need to do this once per environment.
+
+> **💡 Tip:** If you ever add a new package with `pip install <package-name>`, ask your AI assistant to help you add it to `requirements.txt` so the project stays up to date.
 
 ---
 
@@ -213,17 +200,19 @@ Your AI assistant will help you load and use these secrets properly in your code
 
 > **💡 Tip:** Your `.env` file is already protected by `.gitignore`, so it won't be uploaded to GitHub. Your secrets stay private!
 
+&nbsp;
+
 #### ⚠️ Important Rules
 
 - **Never** write secrets directly in your code
 - **Always** use a `.env` file for passwords, API keys, and tokens
 - **Ask your AI assistant** to help you use environment variables when you need them
 
----
+&nbsp;
 
-## Your First Challenge: Understanding the Code
+## Start Coding
 
-Before running anything, let’s ask your AI assistant what the code means.
+Before running anything, let's ask your AI assistant what the code means.
 
 In the **AI Chat panel**, on the right side, type:
 
@@ -231,4 +220,36 @@ In the **AI Chat panel**, on the right side, type:
 Can you explain what the code in `main.py` does?
 ```
 
-You’ll get a simple, logical explanation of what the program does, not just a code breakdown.
+You'll get a simple, logical explanation of what the program does, not just a code breakdown.
+
+
+### Keep Exploring
+
+Once you understand `main.py`, try these follow-up prompts with your AI assistant:
+
+- **"What would happen if I changed the message to my own name?"** — then try it!
+- **"Can you show me how to make the program ask for my name and greet me?"**
+- **"What is a variable? Can you show me an example in this file?"**
+
+There are no wrong questions — the AI is here to help you learn at your own pace.
+
+&nbsp;
+
+### Working Through the Sessions
+
+This project is organized into sessions, each with small exercises to build your skills step by step:
+
+```
+session-1/   ← Start here
+session-2/
+session-3/
+...
+```
+
+To run an exercise, use its path in the terminal:
+
+```bash
+python session-1/1_01.py
+```
+
+When you're ready to move on, open the next exercise file and **ask your AI assistant to guide you through it.**

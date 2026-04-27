@@ -59,8 +59,8 @@
   - **Windows:** `.\\.venv\\Scripts\\Activate.ps1`
   - **Mac/Linux:** `source .venv/bin/activate`
 - If they don't have a virtual environment set up, refer them to the setup guides:
-  - [Windows Setup Guide](setup_windows.md)
-  - [Mac Setup Guide](setup_mac.md)
+  - [Windows Setup Guide](docs/setup_windows.md)
+  - [Mac Setup Guide](docs/setup_mac.md)
 
 ## Dependency Management
 
