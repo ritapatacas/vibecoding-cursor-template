@@ -17,6 +17,15 @@ Let's explore this workspace together:
    - [Activate Your Environment](#activate-your-environment)
    - [Run Code](#run-code)
    - [Using Libraries](#using-libraries)
+1. [Getting Started](#getting-started)
+   - [IDE Setup](docs/ide_setup.md)
+   - [Get the Project](docs/get_the_project.md)
+   - [Getting to Know Your IDE](docs/getting_to_know_your_ide.md)
+2. [How to](#how-to)
+   - [Use the Terminal](#use-the-terminal)
+   - [Activate Your Environment](#activate-your-environment)
+   - [Run Code](#run-code)
+   - [Using Libraries](#using-libraries)
    - [Working with Secrets](#working-with-secrets-api-keys-passwords)
 3. [Start Coding](#start-coding)
 
@@ -176,7 +185,72 @@ That's it! Python will download and install everything listed in the file. You o
 
 > **💡 Tip:** If you ever add a new package with `pip install <package-name>`, ask your AI assistant to help you add it to `requirements.txt` so the project stays up to date.
 
+&nbsp;
+
 ---
+
+### Run Code
+
+1. Make sure `main.py` is open in the **Editor**.
+2. Click into the **Terminal** at the bottom.
+3. Run this command:
+
+```bash
+python main.py
+```
+> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
+
+4. You should see this message appear in the terminal:
+
+```sh
+Hello, world!
+```
+
+🎉 Congrats, you just ran your first Python program in your IDE!
+
+&nbsp;
+
+#### Running Files from Any Directory
+
+> **Important:** The IDE play button uses the system interpreter and does not run code inside the virtual environment. This behavior is generally not configurable. To ensure the correct environment is used, run your files directly from the terminal.
+
+To run a Python file from any directory:
+
+1. **Confirm that your virtual environment is activated.**  
+   You should see `(.venv)` at the start of your terminal prompt.
+
+2. **Open the Terminal.**
+
+3. **Run the file by providing its relative path:**
+
+```bash
+python session-1/1_01.py
+```
+
+> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
+
+&nbsp;
+
+### Using Libraries
+
+This project uses a `requirements.txt` file to list the Python packages it depends on. Here's what's included:
+
+| Package | What it does |
+|---------|-------------|
+| `pip` | Python's package installer — keeps itself up to date |
+| `autopep8` | Automatically formats your code to follow Python style guidelines |
+
+Make sure your virtual environment is activated (you should see `(.venv)` in your terminal), then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+That's it! Python will download and install everything listed in the file. You only need to do this once per environment.
+
+> **💡 Tip:** If you ever add a new package with `pip install <package-name>`, ask your AI assistant to help you add it to `requirements.txt` so the project stays up to date.
+
+&nbsp;
 
 ### Working with Secrets (API Keys, Passwords)
 
@@ -202,6 +276,8 @@ Your AI assistant will help you load and use these secrets properly in your code
 
 &nbsp;
 
+&nbsp;
+
 #### ⚠️ Important Rules
 
 - **Never** write secrets directly in your code
@@ -209,9 +285,12 @@ Your AI assistant will help you load and use these secrets properly in your code
 - **Ask your AI assistant** to help you use environment variables when you need them
 
 &nbsp;
+&nbsp;
 
 ## Start Coding
+## Start Coding
 
+Before running anything, let's ask your AI assistant what the code means.
 Before running anything, let's ask your AI assistant what the code means.
 
 In the **AI Chat panel**, on the right side, type:
@@ -220,6 +299,39 @@ In the **AI Chat panel**, on the right side, type:
 Can you explain what the code in `main.py` does?
 ```
 
+You'll get a simple, logical explanation of what the program does, not just a code breakdown.
+
+
+### Keep Exploring
+
+Once you understand `main.py`, try these follow-up prompts with your AI assistant:
+
+- **"What would happen if I changed the message to my own name?"** — then try it!
+- **"Can you show me how to make the program ask for my name and greet me?"**
+- **"What is a variable? Can you show me an example in this file?"**
+
+There are no wrong questions — the AI is here to help you learn at your own pace.
+
+&nbsp;
+
+### Working Through the Sessions
+
+This project is organized into sessions, each with small exercises to build your skills step by step:
+
+```
+session-1/   ← Start here
+session-2/
+session-3/
+...
+```
+
+To run an exercise, use its path in the terminal:
+
+```bash
+python session-1/1_01.py
+```
+
+When you're ready to move on, open the next exercise file and **ask your AI assistant to guide you through it.**
 You'll get a simple, logical explanation of what the program does, not just a code breakdown.
 
 
