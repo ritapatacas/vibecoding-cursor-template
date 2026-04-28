@@ -4,19 +4,14 @@ This is a simple project to help you get started with Python using your preferre
 You'll write your very first scripts here, while your AI assistant acts as your tutor and guide.  
 Let's explore this workspace together:
 
+> 💡 **Learning Tip:**
+> You don't need to understand everything at once.
+> Focus on getting things to work first — understanding comes with practice.
+
 ---
 
 ## 📋 Table of Contents
 
-1. [Getting Started](#getting-started)
-   - [IDE Setup](docs/ide_setup.md)
-   - [Get the Project](docs/get_the_project.md)
-   - [Getting to Know Your IDE](docs/getting_to_know_your_ide.md)
-2. [How to](#how-to)
-   - [Use the Terminal](#use-the-terminal)
-   - [Activate Your Environment](#activate-your-environment)
-   - [Run Code](#run-code)
-   - [Using Libraries](#using-libraries)
 1. [Getting Started](#getting-started)
    - [IDE Setup](docs/ide_setup.md)
    - [Get the Project](docs/get_the_project.md)
@@ -33,16 +28,18 @@ Let's explore this workspace together:
 
 ## Getting Started
 
-### [IDE Setup guide](docs/ide_setup.md)
+Let’s get a few things set up to get you started. No worries — you’ll find step-by-step guides for both Windows and Mac in the links below. Follow them in order:
+
+### [IDE Setup](docs/ide_setup.md) 
 
 > Install Python and Git, choose your IDE, and follow the setup guide for your system.
 
 
-### [Get the Project guide](docs/get_the_project.md)
+### [Get the Project](docs/get_the_project.md)
 
-> Download or clone the project onto your computer.
+> Bring the code onto your machine: download or clone the project onto your computer.
 
-### [Getting to Know Your IDE guide](docs/getting_to_know_your_ide.md)
+### [Getting to Know Your IDE](docs/getting_to_know_your_ide.md)
 
 > Learn your way around the IDE layout and project files.
 
@@ -52,7 +49,8 @@ Let's explore this workspace together:
 
 ### Use the Terminal
 
-The terminal is where you run your code and interact with your project. It looks like a plain text window where you type commands and press **Enter** to execute them.
+The terminal is where you talk to your computer — and where your code actually runs.
+If this feels unfamiliar, that's normal — you'll get used to it quickly.
 
 #### Opening the Terminal
 
@@ -64,6 +62,8 @@ The terminal is where you run your code and interact with your project. It looks
 - ** Mac:** Search for **Terminal** in Spotlight (`⌘` + `Space`, then type "Terminal").
 
 #### Essential Commands
+
+Here are a few commands you'll use all the time:
 
 | Command | What it does | Example |
 |---------|-------------|---------|
@@ -83,13 +83,13 @@ The terminal is where you run your code and interact with your project. It looks
 
 #### Reading Error Messages
 
-When something goes wrong, Python prints an error in the terminal. Don't panic — errors are normal and helpful! Ask your AI assistant: **"I got this error, what does it mean?"** and paste the message. It will explain what went wrong and how to fix it.
+When something goes wrong, Python prints an error in the terminal. Don't panic — errors are normal and helpful! Ask your AI assistant: **"I got this error, what does it mean?"** and paste the message. Make sure you understand the explanation.
 
 ---
 
 ### Activate Your Environment
 
-**Good news!** A Python environment is already prepared for you. 🎉
+**Good news** — your Python environment is already prepared for you. 🎉
 
 When you open a terminal, you might see `(.venv)` at the start of the prompt, like this:
 
@@ -97,11 +97,11 @@ When you open a terminal, you might see `(.venv)` at the start of the prompt, li
 (.venv) vibecoding-02-03-68307615:$
 ```
 
-This means your environment is ready! If you see this, skip to [Run Code](#run-code).
+If you see `(.venv)`, everything is ready to go. Skip to [Run Code](#run-code).
 
 &nbsp;
 
-If you don't see `(.venv)`, run this command to activate it:
+If you don't see it, no problem — just run the command below.
 
 **田 Windows:**
 
@@ -119,7 +119,7 @@ source .venv/bin/activate
 
 #### First Time Setup
 
-Need to create your environment from scratch? Follow the full setup guide for your system:
+Starting from scratch? Follow the full setup guide below:
 
 - **[田 Windows Setup Guide](docs/setup_windows.md)** - Complete instructions including Python installation
 - **[ Mac Setup Guide](docs/setup_mac.md)** - Complete instructions including Python installation
@@ -128,7 +128,7 @@ Need to create your environment from scratch? Follow the full setup guide for yo
 
 ### Run Code
 
-1. Make sure `main.py` is open in the **Editor**.
+1. Make sure `main.py` is open in the editor.
 2. Click into the **Terminal** at the bottom.
 3. Run this command:
 
@@ -143,11 +143,14 @@ python main.py
 Hello, world!
 ```
 
+If you see `Hello, world!`, everything is working correctly.
+
 🎉 Congrats, you just ran your first Python program in your IDE!
 
 #### Running Files from Any Directory
 
-> **Important:** The IDE play button uses the system interpreter and does not run code inside the virtual environment. This behavior is generally not configurable. To ensure the correct environment is used, run your files directly from the terminal.
+> **Important:** The play button in your IDE does **not** use your project environment.
+> To avoid confusing bugs, always run your code from the terminal.
 
 To run a Python file from any directory:
 
@@ -161,8 +164,6 @@ To run a Python file from any directory:
 ```bash
 python session-1/1_01.py
 ```
-
-> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
 
 ---
 
@@ -181,84 +182,21 @@ Make sure your virtual environment is activated (you should see `(.venv)` in you
 pip install -r requirements.txt
 ```
 
-That's it! Python will download and install everything listed in the file. You only need to do this once per environment.
+That's it — Python takes care of the rest. You only need to do this once per environment.
 
 > **💡 Tip:** If you ever add a new package with `pip install <package-name>`, ask your AI assistant to help you add it to `requirements.txt` so the project stays up to date.
 
 &nbsp;
 
 ---
-
-### Run Code
-
-1. Make sure `main.py` is open in the **Editor**.
-2. Click into the **Terminal** at the bottom.
-3. Run this command:
-
-```bash
-python main.py
-```
-> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
-
-4. You should see this message appear in the terminal:
-
-```sh
-Hello, world!
-```
-
-🎉 Congrats, you just ran your first Python program in your IDE!
-
-&nbsp;
-
-#### Running Files from Any Directory
-
-> **Important:** The IDE play button uses the system interpreter and does not run code inside the virtual environment. This behavior is generally not configurable. To ensure the correct environment is used, run your files directly from the terminal.
-
-To run a Python file from any directory:
-
-1. **Confirm that your virtual environment is activated.**  
-   You should see `(.venv)` at the start of your terminal prompt.
-
-2. **Open the Terminal.**
-
-3. **Run the file by providing its relative path:**
-
-```bash
-python session-1/1_01.py
-```
-
-> **💡 Note:** On Mac/Linux, the Python command may be `python3` instead of `python`.
-
-&nbsp;
-
-### Using Libraries
-
-This project uses a `requirements.txt` file to list the Python packages it depends on. Here's what's included:
-
-| Package | What it does |
-|---------|-------------|
-| `pip` | Python's package installer — keeps itself up to date |
-| `autopep8` | Automatically formats your code to follow Python style guidelines |
-
-Make sure your virtual environment is activated (you should see `(.venv)` in your terminal), then run:
-
-```bash
-pip install -r requirements.txt
-```
-
-That's it! Python will download and install everything listed in the file. You only need to do this once per environment.
-
-> **💡 Tip:** If you ever add a new package with `pip install <package-name>`, ask your AI assistant to help you add it to `requirements.txt` so the project stays up to date.
-
-&nbsp;
 
 ### Working with Secrets (API Keys, Passwords)
 
-**Important:** Never put passwords or API keys directly in your code!
+**Important:** Never put passwords or API keys directly in your code — even for testing.
 
 #### Using a `.env` File
 
-When you need to store secrets (like API keys), create a file named `.env` in your project folder:
+When you need to store secrets (like API keys), create a `.env` file in your project folder:
 
 1. Right-click in the Explorer → New File → Name it `.env`
 2. Add your secrets, one per line:
@@ -276,8 +214,6 @@ Your AI assistant will help you load and use these secrets properly in your code
 
 &nbsp;
 
-&nbsp;
-
 #### ⚠️ Important Rules
 
 - **Never** write secrets directly in your code
@@ -285,13 +221,16 @@ Your AI assistant will help you load and use these secrets properly in your code
 - **Ask your AI assistant** to help you use environment variables when you need them
 
 &nbsp;
+
+> 💡 **Tip:**
+> If something doesn't work, don't try everything at once.
+> Change one thing, run it again, and observe what happens.
+
 &nbsp;
 
 ## Start Coding
-## Start Coding
 
-Before running anything, let's ask your AI assistant what the code means.
-Before running anything, let's ask your AI assistant what the code means.
+Before running anything, take a moment to understand what the code does. Ask your AI assistant to explain `main.py` — think of it as your first walkthrough.
 
 In the **AI Chat panel**, on the right side, type:
 
@@ -310,7 +249,7 @@ Once you understand `main.py`, try these follow-up prompts with your AI assistan
 - **"Can you show me how to make the program ask for my name and greet me?"**
 - **"What is a variable? Can you show me an example in this file?"**
 
-There are no wrong questions — the AI is here to help you learn at your own pace.
+There are no wrong questions — use the AI as your guide.
 
 &nbsp;
 
@@ -318,38 +257,7 @@ There are no wrong questions — the AI is here to help you learn at your own pa
 
 This project is organized into sessions, each with small exercises to build your skills step by step:
 
-```
-session-1/   ← Start here
-session-2/
-session-3/
-...
-```
-
-To run an exercise, use its path in the terminal:
-
-```bash
-python session-1/1_01.py
-```
-
-When you're ready to move on, open the next exercise file and **ask your AI assistant to guide you through it.**
-You'll get a simple, logical explanation of what the program does, not just a code breakdown.
-
-
-### Keep Exploring
-
-Once you understand `main.py`, try these follow-up prompts with your AI assistant:
-
-- **"What would happen if I changed the message to my own name?"** — then try it!
-- **"Can you show me how to make the program ask for my name and greet me?"**
-- **"What is a variable? Can you show me an example in this file?"**
-
-There are no wrong questions — the AI is here to help you learn at your own pace.
-
-&nbsp;
-
-### Working Through the Sessions
-
-This project is organized into sessions, each with small exercises to build your skills step by step:
+Each session builds on the previous one — follow them in order.
 
 ```
 session-1/   ← Start here

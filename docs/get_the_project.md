@@ -2,6 +2,8 @@
 
 Before you can start coding, you need a copy of this project on your computer. Pick one of the two options below.
 
+&nbsp;
+
 ## Option A: Clone with Git (recommended)
 
 This keeps your work connected to GitHub so you can save and share changes later.
@@ -25,6 +27,8 @@ cd your-repo
 5. Open the folder in your IDE and continue to [Getting to Know Your IDE](getting_to_know_your_ide.md).
 
 > **💡 Having trouble?** You can ask your AI assistant to do this for you — just say: **"Clone this repository for me: `<paste the URL here>`"**
+
+&nbsp;
 
 ## Option B: Download as ZIP
 

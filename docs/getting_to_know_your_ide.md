@@ -12,6 +12,8 @@ Your screen has a few key areas:
 
 > **💡 Tip:** You can open these panels from the top menu: use **View** to panels like the Explorer or AI chat, and **Terminal** menu to open a new terminal.
 
+&nbsp;
+
 ## Exploring the Project Files
 
 - **`main.py`**: This is a good starting point for your Python code. You can use it to follow the first examples, test small ideas, and try new things whenever you want a safe place to experiment.

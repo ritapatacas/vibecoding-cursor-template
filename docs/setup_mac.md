@@ -1,6 +1,8 @@
-#  Mac Setup
+# Mac Setup
 
 ## Tools Installation
+
+If something doesn’t work, copy the error and ask your AI assistant for help.
 
 ### Step 1: Python
 
@@ -11,8 +13,6 @@ python3 --version
 ```
 
 **If you see an error like "Python3 is not installed" or no version is shown, Python is not installed. Choose one of the options below to install it:**
-
-&nbsp;
 
 #### Option 1: Homebrew
 
@@ -45,13 +45,13 @@ If you see a version number, you're good — skip to [Virtual Environment](#virt
 
 **If Git is not installed, choose one of the options below:**
 
-&nbsp;
-
-#### Option 1: Homebrew
+#### Option 1: Homebrew (recommended)
 
 ```bash
 brew install git
 ```
+
+This installs Homebrew (a package manager), then installs Python.
 
 &nbsp;
 
@@ -63,7 +63,11 @@ brew install git
 
 ## Virtual Environment
 
-> Create a virtual environment
+This creates an isolated environment for your project.
+
+### Create a virtual environment
+
+> **💡 Note:** You only need to do this once.
 
 ```bash
 python3 -m venv .venv
@@ -71,18 +75,12 @@ python3 -m venv .venv
 
 &nbsp;
 
-> Activate the environment (every time you don't see `(.venv)` in the terminal)
+### Activate the environment
+
+ Run this command whenever you don’t see (.venv) in your terminal.
 
 ```bash
 source .venv/bin/activate
-```
-
-&nbsp;
-
-> Upgrade pip
-
-```bash
-python -m pip install --upgrade pip
 ```
 
 &nbsp;

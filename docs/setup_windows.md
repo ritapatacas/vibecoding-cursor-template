@@ -2,6 +2,8 @@
 
 ## Tools Installation
 
+If something doesn’t work, copy the error and ask your AI assistant for help.
+
 ### Step 1: Python
 
 > Check if Python is installed:
@@ -11,8 +13,6 @@ python --version
 ```
 
 **If you see an error like "Python is not recognized" or no version is shown, Python is not installed. Choose one of the options below to install it:**
-
-&nbsp;
 
 #### Option 1: Microsoft Store
 
@@ -34,7 +34,7 @@ winget install Python.Python.3.13
 
 1. Go to <https://www.python.org/downloads/>
 2. Download and run the installer
-3. **Important:** Check the box "Add Python to PATH" during installation
+3. **Important:** Check the box "Add Python to PATH" during installation. If you skip this, Python won’t work in the terminal.
 
 &nbsp;
 
@@ -58,7 +58,11 @@ If you see a version number, you're good — skip to [Virtual Environment](#virt
 
 ## Virtual Environment
 
-> Create a virtual environment
+This creates an isolated environment for your project.
+
+### Create a virtual environment
+
+> **💡 Note:** You only need to do this once.
 
 ```powershell
 python -m venv .venv
@@ -66,18 +70,10 @@ python -m venv .venv
 
 &nbsp;
 
-> Activate the environment (every time you don't see `(.venv)` in the terminal)
+### Activate the environment (every time you don't see `(.venv)` in the terminal)
 
 ```powershell
 .venv\Scripts\activate
-```
-
-&nbsp;
-
-> Upgrade pip
-
-```powershell
-python -m pip install --upgrade pip
 ```
 
 &nbsp;
@@ -88,7 +84,7 @@ python -m pip install --upgrade pip
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-**Errors like "developer tools not found":**
+**For errors like "developer tools not found":**
 
 ```powershell
 pip install --upgrade pip setuptools wheel
