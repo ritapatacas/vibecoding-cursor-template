@@ -8,7 +8,7 @@ Let's explore this workspace together:
 > You don't need to understand everything at once.
 > Focus on getting things to work first — understanding comes with practice.
 
----
+&nbsp;
 
 ## 📋 Table of Contents
 
@@ -22,6 +22,7 @@ Let's explore this workspace together:
    - [Run Code](#run-code)
    - [Using Libraries](#using-libraries)
    - [Working with Secrets](#working-with-secrets-api-keys-passwords)
+   - [GitHub Workflows](docs/github_workflows.md)
 3. [Start Coding](#start-coding)
 
 &nbsp;
@@ -46,6 +47,10 @@ Let’s get a few things set up to get you started. No worries — you’ll find
 &nbsp;
 
 ## How to
+
+### [GitHub Workflows](docs/github_workflows.md)
+
+> Learn the main GitHub scenarios: sync a Lovable project, create a repository, clone a repository, and commit and push changes.
 
 ### Use the Terminal
 

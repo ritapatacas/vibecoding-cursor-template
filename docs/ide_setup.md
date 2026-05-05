@@ -1,7 +1,5 @@
 # IDE Setup
 
-## Prerequisites
-
 Before you start coding, make sure you have Python and Git installed.
 
 To run the commands below, open a terminal first:
@@ -12,7 +10,7 @@ To run the commands below, open a terminal first:
 
   &nbsp;
 
-### Python 3.13+
+## Python
 
 Check if Python is installed:
 
@@ -28,7 +26,7 @@ python --version
 python3 --version
 ```
 
-If it's not installed, follow the Python installation steps for your system:
+If it's not installed (aka it doesn't display the installed version), follow the Python installation steps for your system:
 
 - 田 Windows → [Step 1: Python](setup_windows.md#step-1-python)
 
@@ -36,7 +34,7 @@ If it's not installed, follow the Python installation steps for your system:
 
   &nbsp;
 
-### Git
+## Git
 
 Check if Git is installed:
 
@@ -44,7 +42,7 @@ Check if Git is installed:
 git --version
 ```
 
-If it's not installed, follow the Git installation steps for your system:
+If it's not installed (aka it doesn't display the installed version) follow the Git installation steps for your system:
 
 - 田 Windows → [Step 2: Git](setup_windows.md#step-2-git)
 
@@ -52,14 +50,16 @@ If it's not installed, follow the Git installation steps for your system:
 
   &nbsp;
 
-## Choosing an IDE
+## IDE
+
+### Choosing an IDE
 
 Start with an IDE that follows a more assistive philosophy and offers less abstraction over the development process; then later begin a project with an agent and switch to an editor at different stages of development.
 
 | Tool        | Paradigm     | Abstraction      | Assistant / Agent   | Extensions                                  |
 | ----------- | ------------ | ---------------- | ------------------- | ------------------------------------------- |
-| VSCode      | IDE          | Low (expandable) | extensions          | [Copilot](#github-copilot), [Claude](#claude), [Codex](#codex), [Cline](#cline-multimodel), OpenCode     |
-| Cursor      | AI-first IDE | Medium–High      | Cursor | [Claude](#claude), [Codex](#codex), [Cline](#cline-multimodel), OpenCode              |
+| VSCode      | IDE          | Low (expandable) | extensions          | [Copilot](#github-copilot), [Claude](#claude), [Codex](#codex), [Cline](#cline-multimodel), [OpenCode](#opencode-service--ide-extension)     |
+| Cursor      | AI-first IDE | Medium–High      | Cursor | [Claude](#claude), [Codex](#codex), [Cline](#cline-multimodel), [OpenCode](#opencode-service--ide-extension)              |
 | Antigravity | Agentic IDE  | High             | Antigravity         | few options (integrates AI models directly) |
 
 Choose one of these IDE options:
@@ -74,39 +74,46 @@ Choose one of these IDE options:
 
 &nbsp;
 
-## Installing Extensions
+### IDE Extensions
 
-Once your IDE is installed, set up the extensions you need.
-
-To install extensions in **VSCode or Cursor**: open the Extensions panel (puzzle piece icon on the left sidebar, or `Ctrl`+`Shift`+`X` / `⌘`+`Shift`+`X`) and search by name.
-
-### Python language
-
-- Search **Python** by Microsoft and install it
-
-
-### AI extensions
+Once your IDE is installed, set up the some extensions you will need: python language and AI assistants.
 
 > **💡 Tip:** If you have already a subscription for a Claude or OpenAI, check whether your plan includes an AI assistant and choose that extension
 
+&nbsp;
+
+To install extensions in **VSCode or Cursor**: open the Extensions panel (puzzle piece icon on the left sidebar, or `Ctrl`+`Shift`+`X` / `⌘`+`Shift`+`X`) and search by name.
+
+&nbsp;
+
+#### Python language
+
+> Search **Python** by Microsoft
+
 #### GitHub Copilot
 
-- Search **GitHub Copilot** and install it (only in **VSCode**)
-
+> Search **GitHub Copilot** (only in **VSCode**)
 
 #### Claude
 
-- Search **Claude Code for VS Code** by Anthropic and install it
+> Search **Claude Code for VS Code** by Anthropic
 
 #### Codex
 
-- Search **Codex** by OpenAI and install it
+> Search **Codex** by OpenAI
 
 #### Cline (multimodel)
 
-- Search **Cline** and install it
-- You can use several AI models with **Cline**; some are completely free. Check their [documentation](https://docs.cline.bot/getting-started/installing-cline).
-- **Cline** is available for the three IDE options
+> Search **Cline** (available for the three IDE options)
+> 
+> You can use several AI models with **Cline** (some are completely free) - check their [documentation](https://docs.cline.bot/getting-started/installing-cline).
+
+#### OpenCode (multimodel)
+
+> Search **OpenCode GUI** (this extension is not official, it's a work around for you to have a chat interface)
+>
+> Similar to **Cline**, **OpenCode** is a multimodel service and some models are available for free.
+
 
 
 &nbsp;

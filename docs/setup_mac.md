@@ -61,6 +61,42 @@ This installs Homebrew (a package manager), then installs Python.
 
 &nbsp;
 
+### Configure Git
+
+> Check if Git is already configured with your user name:
+
+```bash
+git config --global user.name
+```
+
+If your name is shown, you're good — skip to [Virtual Environment](#virtual-environment).
+
+&nbsp;
+
+#### Option 1: Ask your AI agent to do it
+
+Ask your AI agent to verify Git installation and configure your Git user.
+
+Give the agent:
+
+- your name
+- your GitHub account email
+
+&nbsp;
+
+#### Option 2: Configure Git manually
+
+Run:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+
+Replace the example values with your own.
+
+&nbsp;
+
 ## Virtual Environment
 
 This creates an isolated environment for your project.
